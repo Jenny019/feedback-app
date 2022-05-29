@@ -4,6 +4,7 @@ import FeedbackList from './components/FeedbackList';
 import FeedbackData from './data/FeedbackData';
 import FeedbackStats from './components/FeedbackStats';
 import FeedbackForm from './components/FeedbackForm';
+import { FeedbackProvider } from './context/FeedbackContext';
 
 import './App.css';
 
@@ -17,7 +18,7 @@ function App() {
   }
 
   return (
-    <>
+    <FeedbackProvider>
       <Header />
       <div className="container">
         <FeedbackForm />
@@ -25,7 +26,7 @@ function App() {
         <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
         
       </div>
-    </>
+    </FeedbackProvider>
   );
 }
 
