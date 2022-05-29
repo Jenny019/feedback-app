@@ -3,7 +3,6 @@ import FeedbackItem from './FeedbackItem'
 // import PropTypes from 'prop-types'
 import FeedbackContext from '../context/FeedbackContext'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaSpinner } from 'react-icons/fa'
 import Spinner from './shared/Spinner'
 
 // add layout prop for nicer animation
